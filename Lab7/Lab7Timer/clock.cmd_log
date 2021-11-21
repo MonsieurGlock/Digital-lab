@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym clock C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sch C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym clock C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sch C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym clock C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sch C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym clock C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sch C:/work/Digital/Lab/Lab7/Lab7Timer/clock.sym 

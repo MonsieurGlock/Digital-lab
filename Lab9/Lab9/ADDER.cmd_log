@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym ADDER C:/work/Digital/Lab/Lab9/Lab9/ADDER.sch C:/work/Digital/Lab/Lab9/Lab9/ADDER.sym 

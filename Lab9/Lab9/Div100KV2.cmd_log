@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100KV2 C:/work/Digital/Lab/Lab9/Lab9/Div100KV2.sch C:/work/Digital/Lab/Lab9/Lab9/Div100KV2.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100KV2 C:/work/Digital/Lab/Lab9/Lab9/Div100KV2.sch C:/work/Digital/Lab/Lab9/Lab9/Div100KV2.sym 

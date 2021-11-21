@@ -1,0 +1,162 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : div20M.vf
+// /___/   /\     Timestamp : 11/14/2021 13:45:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/work/Digital/Lab/Lab7/Lab7Timer/div20M.vf -w C:/work/Digital/Lab/Lab7/Lab7Timer/div20M.sch
+//Design Name: div20M
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_div20M(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_9_MUSER_div20M(CLK, 
+                               reset, 
+                               C, 
+                               TC);
+
+    input CLK;
+    input reset;
+   output [3:0] C;
+   output TC;
+   
+   wire XLXN_6;
+   wire XLXN_11;
+   wire XLXN_29;
+   wire XLXN_34;
+   wire [3:0] C_DUMMY;
+   wire TC_DUMMY;
+   
+   assign C[3:0] = C_DUMMY[3:0];
+   assign TC = TC_DUMMY;
+   (* HU_SET = "XLXI_4_53" *) 
+   FTC_HXILINX_div20M  XLXI_4 (.C(CLK), 
+                              .CLR(XLXN_29), 
+                              .T(XLXN_34), 
+                              .Q(C_DUMMY[0]));
+   (* HU_SET = "XLXI_6_54" *) 
+   FTC_HXILINX_div20M  XLXI_6 (.C(CLK), 
+                              .CLR(XLXN_29), 
+                              .T(C_DUMMY[0]), 
+                              .Q(C_DUMMY[1]));
+   (* HU_SET = "XLXI_7_55" *) 
+   FTC_HXILINX_div20M  XLXI_7 (.C(CLK), 
+                              .CLR(XLXN_29), 
+                              .T(XLXN_6), 
+                              .Q(C_DUMMY[2]));
+   AND2  XLXI_9 (.I0(C_DUMMY[1]), 
+                .I1(C_DUMMY[0]), 
+                .O(XLXN_6));
+   AND3  XLXI_10 (.I0(C_DUMMY[2]), 
+                 .I1(C_DUMMY[1]), 
+                 .I2(C_DUMMY[0]), 
+                 .O(XLXN_11));
+   (* HU_SET = "XLXI_11_56" *) 
+   FTC_HXILINX_div20M  XLXI_11 (.C(CLK), 
+                               .CLR(XLXN_29), 
+                               .T(XLXN_11), 
+                               .Q(C_DUMMY[3]));
+   AND2  XLXI_19 (.I0(C_DUMMY[1]), 
+                 .I1(C_DUMMY[3]), 
+                 .O(TC_DUMMY));
+   OR2  XLXI_20 (.I0(TC_DUMMY), 
+                .I1(reset), 
+                .O(XLXN_29));
+   VCC  XLXI_21 (.P(XLXN_34));
+endmodule
+`timescale 1ns / 1ps
+
+module div20M(CLKin, 
+              CLKout);
+
+    input CLKin;
+   output CLKout;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_10;
+   wire XLXN_23;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire XLXN_30;
+   
+   counter0_9_MUSER_div20M  XLXI_1 (.CLK(CLKin), 
+                                   .reset(XLXN_23), 
+                                   .C(), 
+                                   .TC(XLXN_2));
+   counter0_9_MUSER_div20M  XLXI_2 (.CLK(XLXN_2), 
+                                   .reset(XLXN_23), 
+                                   .C(), 
+                                   .TC(XLXN_3));
+   counter0_9_MUSER_div20M  XLXI_5 (.CLK(XLXN_3), 
+                                   .reset(XLXN_23), 
+                                   .C(), 
+                                   .TC(XLXN_4));
+   counter0_9_MUSER_div20M  XLXI_6 (.CLK(XLXN_4), 
+                                   .reset(XLXN_23), 
+                                   .C(), 
+                                   .TC(XLXN_5));
+   counter0_9_MUSER_div20M  XLXI_7 (.CLK(XLXN_5), 
+                                   .reset(XLXN_23), 
+                                   .C(), 
+                                   .TC(XLXN_6));
+   counter0_9_MUSER_div20M  XLXI_8 (.CLK(XLXN_6), 
+                                   .reset(XLXN_23), 
+                                   .C(), 
+                                   .TC(XLXN_7));
+   counter0_9_MUSER_div20M  XLXI_19 (.CLK(XLXN_7), 
+                                    .reset(XLXN_23), 
+                                    .C(), 
+                                    .TC(XLXN_30));
+   (* HU_SET = "XLXI_20_57" *) 
+   FTC_HXILINX_div20M  XLXI_20 (.C(XLXN_28), 
+                               .CLR(XLXN_10), 
+                               .T(XLXN_29), 
+                               .Q(CLKout));
+   GND  XLXI_21 (.G(XLXN_10));
+   VCC  XLXI_22 (.P(XLXN_29));
+   GND  XLXI_24 (.G(XLXN_23));
+   (* HU_SET = "XLXI_26_58" *) 
+   FTC_HXILINX_div20M  XLXI_26 (.C(XLXN_30), 
+                               .CLR(XLXN_10), 
+                               .T(XLXN_29), 
+                               .Q(XLXN_28));
+endmodule

@@ -1,0 +1,8 @@
+
+# PlanAhead Generated physical constraints 
+
+
+NET "CLK" LOC = P123;
+NET "LED" LOC = P82;
+NET "r" LOC = P51;
+NET "Run" LOC = P48;

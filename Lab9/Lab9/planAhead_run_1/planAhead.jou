@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sat Nov 13 13:47:38 2021
+# Process ID: 20920
+# Log file: C:/work/Digital/Lab/Lab9/Lab9/planAhead_run_1/planAhead.log
+# Journal file: C:/work/Digital/Lab/Lab9/Lab9/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/work/Digital/Lab/Lab9/Lab9/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  LEDtest]]
+startgroup
+set_property package_pin P82 [get_ports XLXN_123]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports XLXN_124]
+endgroup
+set_property package_pin "" [get_ports [list  XLXN_126]]
+startgroup
+set_property package_pin P80 [get_ports XLXN_125]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports XLXN_126]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports LEDtest]
+endgroup
+save_constraints
+startgroup
+set_property package_pin P51 [get_ports selAdd]
+endgroup
+set_property package_pin "" [get_ports [list  selDiffer]]
+set_property package_pin "" [get_ports [list  selShl]]
+startgroup
+set_property package_pin P48 [get_ports selSub]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports selDiffer]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports selShl]
+endgroup
+save_constraints
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

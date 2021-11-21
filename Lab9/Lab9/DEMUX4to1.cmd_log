@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -verilog DEMUX4to1_drc.vf -w C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sch 
+sch2sym -intstyle ise -family spartan6 -refsym DEMUX4to1 C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sch C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym DEMUX4to1 C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sch C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym DEMUX4to1 C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sch C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym DEMUX4to1 C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sch C:/work/Digital/Lab/Lab9/Lab9/DEMUX4to1.sym 

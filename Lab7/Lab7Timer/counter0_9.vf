@@ -1,0 +1,100 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : counter0_9.vf
+// /___/   /\     Timestamp : 11/14/2021 13:45:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/work/Digital/Lab/Lab7/Lab7Timer/counter0_9.vf -w C:/work/Digital/Lab/Lab7/Lab7Timer/counter0_9.sch
+//Design Name: counter0_9
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_counter0_9(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_9(CLK, 
+                  reset, 
+                  C, 
+                  TC);
+
+    input CLK;
+    input reset;
+   output [3:0] C;
+   output TC;
+   
+   wire XLXN_6;
+   wire XLXN_11;
+   wire XLXN_29;
+   wire XLXN_34;
+   wire [3:0] C_DUMMY;
+   wire TC_DUMMY;
+   
+   assign C[3:0] = C_DUMMY[3:0];
+   assign TC = TC_DUMMY;
+   (* HU_SET = "XLXI_4_45" *) 
+   FTC_HXILINX_counter0_9  XLXI_4 (.C(CLK), 
+                                  .CLR(XLXN_29), 
+                                  .T(XLXN_34), 
+                                  .Q(C_DUMMY[0]));
+   (* HU_SET = "XLXI_6_46" *) 
+   FTC_HXILINX_counter0_9  XLXI_6 (.C(CLK), 
+                                  .CLR(XLXN_29), 
+                                  .T(C_DUMMY[0]), 
+                                  .Q(C_DUMMY[1]));
+   (* HU_SET = "XLXI_7_47" *) 
+   FTC_HXILINX_counter0_9  XLXI_7 (.C(CLK), 
+                                  .CLR(XLXN_29), 
+                                  .T(XLXN_6), 
+                                  .Q(C_DUMMY[2]));
+   AND2  XLXI_9 (.I0(C_DUMMY[1]), 
+                .I1(C_DUMMY[0]), 
+                .O(XLXN_6));
+   AND3  XLXI_10 (.I0(C_DUMMY[2]), 
+                 .I1(C_DUMMY[1]), 
+                 .I2(C_DUMMY[0]), 
+                 .O(XLXN_11));
+   (* HU_SET = "XLXI_11_48" *) 
+   FTC_HXILINX_counter0_9  XLXI_11 (.C(CLK), 
+                                   .CLR(XLXN_29), 
+                                   .T(XLXN_11), 
+                                   .Q(C_DUMMY[3]));
+   AND2  XLXI_19 (.I0(C_DUMMY[1]), 
+                 .I1(C_DUMMY[3]), 
+                 .O(TC_DUMMY));
+   OR2  XLXI_20 (.I0(TC_DUMMY), 
+                .I1(reset), 
+                .O(XLXN_29));
+   VCC  XLXI_21 (.P(XLXN_34));
+endmodule

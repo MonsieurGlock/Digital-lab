@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : counter0_3.vf
+// /___/   /\     Timestamp : 11/14/2021 13:45:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/work/Digital/Lab/Lab7/Lab7Timer/counter0_3.vf -w C:/work/Digital/Lab/Lab7/Lab7Timer/counter0_3.sch
+//Design Name: counter0_3
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_counter0_3(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_3(CLK, 
+                  C0, 
+                  C1);
+
+    input CLK;
+   output C0;
+   output C1;
+   
+   wire XLXN_3;
+   wire XLXN_10;
+   wire C0_DUMMY;
+   
+   assign C0 = C0_DUMMY;
+   GND  XLXI_5 (.G(XLXN_3));
+   (* HU_SET = "XLXI_7_0" *) 
+   FTC_HXILINX_counter0_3  XLXI_7 (.C(CLK), 
+                                  .CLR(XLXN_3), 
+                                  .T(XLXN_10), 
+                                  .Q(C0_DUMMY));
+   (* HU_SET = "XLXI_8_1" *) 
+   FTC_HXILINX_counter0_3  XLXI_8 (.C(CLK), 
+                                  .CLR(XLXN_3), 
+                                  .T(C0_DUMMY), 
+                                  .Q(C1));
+   VCC  XLXI_9 (.P(XLXN_10));
+endmodule

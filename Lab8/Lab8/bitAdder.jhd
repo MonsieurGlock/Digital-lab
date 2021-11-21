@@ -1,0 +1,3 @@
+MODULE bitAdder
+	SUBMODULE decodeTosegment
+		INSTANCE XLXI_1

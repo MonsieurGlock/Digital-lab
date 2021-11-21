@@ -1,0 +1,8 @@
+verilog work "Div10V2.vf"
+verilog work "selector.vf"
+verilog work "Div100K.vf"
+verilog work "display.vf"
+verilog work "DEMUX4to1.vf"
+verilog work "ADDER.vf"
+verilog work "decodeTosegment.vf"
+verilog work "ALULab.vf"

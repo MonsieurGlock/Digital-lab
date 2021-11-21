@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog decodeToSegment_drc.vf -w C:/work/Digital/Lab/Lab7/Lab7Timer/decodeToSegment.sch 
+sch2sym -intstyle ise -family spartan6 -refsym decodeToSegment C:/work/Digital/Lab/Lab7/Lab7Timer/decodeToSegment.sch C:/work/Digital/Lab/Lab7/Lab7Timer/decodeToSegment.sym 

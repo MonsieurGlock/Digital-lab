@@ -1,0 +1,62 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : selector.vf
+// /___/   /\     Timestamp : 11/13/2021 16:10:08
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/work/Digital/Lab/Lab9/Lab9/selector.vf -w C:/work/Digital/Lab/Lab9/Lab9/selector.sch
+//Design Name: selector
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module selector(selec, 
+                start, 
+                sel0, 
+                sel1, 
+                sel2, 
+                sel3);
+
+    input selec;
+    input start;
+   output sel0;
+   output sel1;
+   output sel2;
+   output sel3;
+   
+   wire sel0_DUMMY;
+   wire sel1_DUMMY;
+   wire sel2_DUMMY;
+   wire sel3_DUMMY;
+   
+   assign sel0 = sel0_DUMMY;
+   assign sel1 = sel1_DUMMY;
+   assign sel2 = sel2_DUMMY;
+   assign sel3 = sel3_DUMMY;
+   FDP  XLXI_2 (.C(selec), 
+               .D(sel3_DUMMY), 
+               .PRE(start), 
+               .Q(sel0_DUMMY));
+   FDC  XLXI_6 (.C(selec), 
+               .CLR(start), 
+               .D(sel0_DUMMY), 
+               .Q(sel1_DUMMY));
+   FDC  XLXI_7 (.C(selec), 
+               .CLR(start), 
+               .D(sel1_DUMMY), 
+               .Q(sel2_DUMMY));
+   FDC  XLXI_8 (.C(selec), 
+               .CLR(start), 
+               .D(sel2_DUMMY), 
+               .Q(sel3_DUMMY));
+endmodule

@@ -1,0 +1,64 @@
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+xst -intstyle ise -ifn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.xst" -ofn "C:/work/Digital/Lab/Lab9/Lab9/ALULab.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALULab.ucf -p xc6slx9-tqg144-3 ALULab.ngc ALULab.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALULab_map.ncd ALULab.ngd ALULab.pcf 
+par -w -intstyle ise -ol high -mt off ALULab_map.ncd ALULab.ncd ALULab.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ALULab.twx ALULab.ncd -o ALULab.twr ALULab.pcf -ucf ALULab.ucf 
+bitgen -intstyle ise -f ALULab.ut ALULab.ncd 

@@ -1,0 +1,21 @@
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ALULab.ngc ...
+WARNING:NetListWriters:298 - No output is written to ALULab.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus XLXI_15/XLXI_5/S_DUMMY<3 : 1> on block
+   ALULab is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_15/XLXI_4/S_DUMMY<3 : 1> on block
+   ALULab is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_15/XLXI_3/S_DUMMY<3 : 1> on block
+   ALULab is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_15/XLXI_2/S_DUMMY<3 : 1> on block
+   ALULab is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_15/XLXI_1/S_DUMMY<3 : 1> on block
+   ALULab is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ALULab.edif ...
+ngc2edif: Total memory usage is 79004 kilobytes
+

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym div10k C:/work/Digital/Lab/Lab7/Lab7Timer/div10k.sch C:/work/Digital/Lab/Lab7/Lab7Timer/div10k.sym 

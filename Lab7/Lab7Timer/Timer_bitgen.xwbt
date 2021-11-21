@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\work\Digital\Lab\Lab7\Lab7Timer\Timer.ncd
+OUTFILE=C:\work\Digital\Lab\Lab7\Lab7Timer\Timer.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\work\Digital\Lab\Lab7\Lab7Timer
+LICENSE=WebPack
+USER_INFO=__0_0_0
